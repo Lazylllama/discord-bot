@@ -1,7 +1,7 @@
 # Fishy Skin Checker Discord Bot
 
 ### Todo
-Make code cleaner, seperate files, ect
+Nothing for now :)
 
 ### Get Started
 To get started, run `npm install`. Then run one of the following commands:
