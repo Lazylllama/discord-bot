@@ -1,0 +1,18 @@
+{
+  "name": "fishyskinchecker",
+  "version": "1.0.0",
+  "description": "An Open Source Fortnite Skin Checker Bot For Discord!",
+  "main": "client.js",
+  "scripts": {
+    "prod": "node client.js",
+    "dev": "nodemon client.js"
+  },
+  "author": "ophx",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^14.14.1",
+    "dotenv": "^16.3.1",
+    "fnbr": "^3.1.6",
+    "moment": "^2.29.4"
+  }
+}
