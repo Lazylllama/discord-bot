@@ -1,4 +1,4 @@
-const { EmbedBuilder, ActionRowBuilder, ButtonBuilder, ButtonStyle, ModalBuilder, TextInputBuilder, TextInputStyle, InteractionType } = require("discord.js");
+const { ActionRowBuilder, ButtonBuilder, ButtonStyle, ModalBuilder, TextInputBuilder, TextInputStyle, InteractionType } = require("discord.js");
 const { Client: FNBRClient } = require("fnbr");
 const { loginEmbedded, infoEmbedded, statsEmbedded, seasonEmbedded, skinsEmbedded } = require("../helpers/embeds");
 
