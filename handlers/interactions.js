@@ -2,6 +2,7 @@ const { ActionRowBuilder, ButtonBuilder, ButtonStyle, ModalBuilder, TextInputBui
 const { Client: FNBRClient } = require("fnbr");
 const { loginEmbedded, infoEmbedded, statsEmbedded, seasonEmbedded, skinsEmbedded } = require("../helpers/embeds");
 
+// handle commands
 async function handleInteractions(interaction) {
     // buttons
     if (interaction.isButton()) {
