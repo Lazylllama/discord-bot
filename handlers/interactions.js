@@ -1,6 +1,6 @@
 const { ActionRowBuilder, ButtonBuilder, ButtonStyle, ModalBuilder, TextInputBuilder, TextInputStyle, InteractionType } = require("discord.js");
 const { Client: FNBRClient } = require("fnbr");
-const { loginEmbedded, infoEmbedded, statsEmbedded, seasonEmbedded, skinsEmbedded } = require("../helpers/embeds");
+const { loginEmbedded, botInfoEmbedded, infoEmbedded, statsEmbedded, seasonEmbedded, skinsEmbedded } = require("../helpers/embeds");
 
 // handle commands
 async function handleInteractions(interaction) {
@@ -103,6 +103,18 @@ async function handleInteractions(interaction) {
             components: [
                 buttonRow
             ]
+        });
+    }
+
+    // bot_info command
+    if (interaction.commandName === "bot_info") {
+        await interaction.deferReply({ ephemeral: true });
+
+        interaction.editReply({
+            content: "",
+            embeds: [
+                (await botInfoEmbedded(interaction.client)),
+            ],
         });
     }
 }

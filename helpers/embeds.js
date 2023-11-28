@@ -13,6 +13,48 @@ Keep in mind that the code will expire in 10 minutes`)
     return loginEmbed;
 }
 
+// bot info
+async function botInfoEmbedded(client) {
+    const botInfoEmbed = new EmbedBuilder()
+        .setTitle("Bot Information")
+        .setThumbnail(`${client.user.avatarURL()}`)
+        .addFields(
+            {
+                name: "Servers",
+                value: `${client.guilds.cache.size}`,
+                inline: true,
+            },
+            {
+                name: "Users",
+                value: `${client.users.cache.size}`,
+                inline: true,
+            },
+            {
+                name: "Ping",
+                value: `${client.ws.ping}ms`,
+                inline: true,
+            },
+            {
+                name: "Last Restarted",
+                value: `<t:${Math.floor(client.readyTimestamp / 1000)}:R>`,
+                inline: true,
+            },
+            {
+                name: "GitHub",
+                value: "[Click Me!](https://github.com/FishySkinChecker/discord-bot)",
+                inline: true,
+            },
+            {
+                name: "Support Server",
+                value: "[Click Me!](https://discord.gg/dAeFbHCtrp)",
+                inline: true,
+            },
+        )
+        .setTimestamp();
+
+    return botInfoEmbed;
+}
+
 // info
 async function infoEmbedded(fnbrclient, user) {
     const infoEmbed = new EmbedBuilder()
@@ -66,6 +108,7 @@ async function skinsEmbedded(itemsCount) {
 
 module.exports = {
     loginEmbedded,
+    botInfoEmbedded,
     infoEmbedded,
     statsEmbedded,
     seasonEmbedded,

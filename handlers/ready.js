@@ -8,6 +8,10 @@ async function registerCommands() {
             name: "login",
             description: "Login to your Epic Games account",
         },
+        {
+            name: "bot_info",
+            description: "Information about the bot",
+        },
     ];
 
     try {
