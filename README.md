@@ -7,8 +7,8 @@ messy code ik lol shut up
 ### Get Started
 To get started, run `npm install`. Then run one of the following commands:
 ```
-npm run prod - for production
-npm run dev - for development/testing
+npm run prod
+npm run dev
 ```
 
 ### Authentication
