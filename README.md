@@ -1,4 +1,4 @@
-# Fishy Skin Checker Discord Bot
+### Fishy Skin Checker Discord Bot
 messy code ik lol shut up
 
 ### Todo
