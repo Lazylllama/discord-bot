@@ -1,8 +1,8 @@
 ### Fishy Skin Checker Discord Bot
 messy code ik lol shut up
 
-### Todo
-Nothing for now :)
+### Preivew
+![img](https://cdn.discordapp.com/attachments/1174210667641835590/1178742091900264448/image.png?ex=6577401e&is=6564cb1e&hm=306fb7796b006affe07ecc7b43b710945bd62e780e1f7bafc6b8994e5d9d6a3c&)
 
 ### Get Started
 To get started, run `npm install`. Then run one of the following commands:
